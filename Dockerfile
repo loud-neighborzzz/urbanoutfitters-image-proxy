@@ -1,7 +1,6 @@
 FROM node 
-WORKDIR /app
-COPY . /app
+WORKDIR /zapp
+COPY . /zapp
 RUN npm install
-RUN npm run seed
 EXPOSE 666
 CMD ["npm", "start"]
